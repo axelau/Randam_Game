@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div class="card">
+	<h2>English Test</h2>
+	<h3 id="title">english</h3>
+	<h3 id="english">information</h3>
+	<button id="button_f" onclick="myFunction()">Try it</button>
+</div>
+
+<style>
+
+html,body{
+	height: 100%;
+	width: 100%;
+	margin: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card{
+	width: 50%;
+	height: 50%;
+	background-color: #eee;
+	border: solid 2px black;
+}
+
+h2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h3{
+	border: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button_f{
+	border: 5px;
+	justify-content: center;
+	align-items: center;
+}
+
+</style>
+
+<script >
+x = document.getElementById("english");
+x.innerHTML = "helloworld"
+
+var pig = [
+	{name:'pater', welet:'99'},
+	{name:'rose', welet:'70'},
+	{name:'eva', welet:'50'}
+]
+
+function myFunction() {
+  num = Math.floor(Math.random() * 3);
+  document.getElementById("title").innerHTML = pig[num].name;
+  document.getElementById("english").innerHTML = pig[num].welet;
+}
+
+document.getElementById("title").innerHTML="段落已修改。";
+</script>
+</body>
+</html>
